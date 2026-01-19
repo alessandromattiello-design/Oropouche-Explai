@@ -1,0 +1,15 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <!-- redirect immediato alla index (mantiene anche l'hash se presente) -->
+    <meta http-equiv="refresh" content="0;url=./index.html">
+    <script>
+      // fallback JS per redirect che preserva hash
+      const hash = location.hash || '';
+      location.replace('./index.html' + hash);
+    </script>
+    <title>Redirecting…</title>
+  </head>
+  <body></body>
+</html>
